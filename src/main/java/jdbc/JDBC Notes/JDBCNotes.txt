@@ -1,0 +1,196 @@
+=========================
+JDBC NOTES
+=========================
+
+What is JDBC?
+-------------
+JDBC (Java Database Connectivity) is an API provided by Java that allows Java applications to connect to databases, execute SQL queries, and retrieve data.
+
+JDBC stands for:
+J  → Java
+DB → Database
+C  → Connectivity
+
+--------------------------------------------------
+ 
+Why JDBC?
+----------
+JDBC helps Java programs:
+
+• Connect to a database
+• Insert data
+• Update data
+• Delete data
+• Retrieve data
+• Execute SQL queries
+
+--------------------------------------------------
+
+JDBC Architecture
+-----------------
+
+Java Application
+       ↓
+    JDBC API
+       ↓
+    Database
+
+JDBC acts as a bridge between Java applications and databases.
+
+--------------------------------------------------
+
+JDBC Components
+---------------
+
+1. DriverManager
+   - Manages database connections.
+   - Used to establish a connection.
+
+2. Connection
+   - Represents a connection with the database.
+   - Required before executing SQL queries.
+
+3. Statement
+   - Used to execute SQL queries.
+
+4. PreparedStatement
+   - Precompiled SQL statement.
+   - Faster and more secure than Statement.
+
+5. ResultSet
+   - Stores data returned from SELECT queries.
+
+--------------------------------------------------
+
+Basic JDBC Steps
+----------------
+
+Step 1: Import JDBC Package
+
+Step 2: Establish Connection
+
+Step 3: Create Statement
+
+Step 4: Execute Query
+
+Step 5: Process Result
+
+Step 6: Close Connection
+
+--------------------------------------------------
+
+Types of SQL Operations in JDBC
+-------------------------------
+
+1. INSERT
+   Adds new records.
+
+2. UPDATE
+   Modifies existing records.
+
+3. DELETE
+   Removes records.
+
+4. SELECT
+   Retrieves records.
+
+--------------------------------------------------
+
+Statement vs PreparedStatement
+------------------------------
+
+Statement:
+• SQL written every time.
+• Slower.
+• Less secure.
+
+PreparedStatement:
+• SQL compiled once.
+• Faster.
+• Prevents SQL Injection.
+• Most commonly used.
+
+--------------------------------------------------
+
+executeQuery()
+--------------
+Used for SELECT statements.
+
+Returns:
+ResultSet
+
+Example:
+SELECT * FROM student;
+
+--------------------------------------------------
+
+executeUpdate()
+---------------
+Used for:
+• INSERT
+• UPDATE
+• DELETE
+
+Returns:
+Number of rows affected.
+
+--------------------------------------------------
+
+ResultSet
+---------
+Used to read data returned by SELECT queries.
+
+Common Methods:
+
+next()
+Moves to next row.
+
+getInt()
+Reads integer values.
+
+getString()
+Reads string values.
+
+--------------------------------------------------
+
+Advantages of JDBC
+------------------
+
+• Simple to use
+• Database independent
+• Supports all major databases
+• Easy integration with Java
+• Supports transactions
+• Supports batch processing
+
+--------------------------------------------------
+
+Limitations of JDBC
+-------------------
+
+• More code compared to ORM frameworks
+• Manual resource management
+• SQL queries must be written manually
+
+--------------------------------------------------
+
+Real-Life Example
+-----------------
+
+Student Management System
+
+Using JDBC we can:
+
+• Add Student
+• View Student
+• Update Student
+• Delete Student
+
+All database operations are performed through JDBC.
+
+--------------------------------------------------
+
+Interview Definition
+--------------------
+
+JDBC (Java Database Connectivity) is a Java API used to connect Java applications with databases and perform database operations such as INSERT, UPDATE, DELETE, and SELECT.
