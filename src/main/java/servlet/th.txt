@@ -1,0 +1,86 @@
+Web programming 
+---------------
+Application on browser (web application)
+Gmail 
+Zoom 
+Whatsapp
+ChatGPT 
+
+Web App -> Servlets 
+
+Desktop Application -- uses resources of the system 
+Web Applications -- server
+
+
+
+
+Servlets 
+--------
+Servlet Container -> Servlet 
+Apache Tomcat
+
+
+Servlets 
+--------
+Servlet (Interface)
+	init() --> when servlet is loaded (1)
+	service() --> gets called for every request of client
+	destroy() --> destroy (remove) the servlet
+	getServletConfig() --> servlet's configuration (object)
+	getServletInfo() -> returns information of servlets
+	
+All methods should be implemented
+no http methods (get , post , put , delete)
+
+
+Generic Servlet implements Servlet
+---------------
+made on servlet 
+service() -> internally calls 5 methods 
+HTTP 
+FTP 
+SMTP 
+Any protocol 
+ServletRequest 
+Servlet Response
+
+
+
+
+Service()
+{
+	get 
+	post 
+	put 
+	delete 
+	patch 
+}
+
+cannot access only get method 
+
+3. HTTPServlets extends Generic Servlet 
+HTTP Protocols 
+doGet 
+doPost 
+
+
+
+Get 
+---
+data is coming on browser 
+browser is getting the data 
+
+Post
+----
+Send data from browser 
+
+
+
+
+HTTPServletRequest, HTTPServletRespone 
+
+
+
+<====================================================>
+Java + HTML
+Java + New HTML FILE + web.xml(java + html)
