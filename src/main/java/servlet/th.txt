@@ -84,3 +84,37 @@ HTTPServletRequest, HTTPServletRespone
 <====================================================>
 Java + HTML
 Java + New HTML FILE + web.xml(java + html)
+<=====================================================>
+Servlet
+-------
+Servlet -> Generic Servlet -> HttpServlet -> YourServlet
+
+servlet -> init , service , destroy
+
+protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException
+	{
+		//  will tell browser that response will contain html 
+			res.setContentType("text/html");
+			
+			// * will write text into HTTP Response 
+			PrintWriter out = res.getWriter();
+			
+			out.println("<html>");
+			out.println("<body>");
+			out.println("<h1>Hello World from Hello Servlet Class</h1>");
+			out.println("</body>");
+			out.println("</body>");
+			
+			out.close();
+	}
+	
+	
+Load yourServlet  -> Create Object -> init ()  -> Service()  -> logic (get , post)  -> destroy()
+
+HttpServlet  -> doget , doPost
+
+
+
+init() -> one time instantation
+
+

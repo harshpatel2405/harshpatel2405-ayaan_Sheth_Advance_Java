@@ -30,7 +30,7 @@ public class WelcomeServlet extends HttpServlet {
 			}
 			else
 			{
-				out.println("<h1>Welcome" + name + "</h1>");
+				out.println("<h1>Welcome " + name + "</h1>");
 			}
 					
 			

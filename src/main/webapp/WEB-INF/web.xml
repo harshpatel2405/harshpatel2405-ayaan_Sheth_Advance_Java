@@ -10,7 +10,7 @@
         <welcome-file>HTML/index.html</welcome-file>
     </welcome-file-list>
     
-    <!-- one servlet  welcomeServlet.java-->
+    <!-- one Servlet  welcomeServlet.java-->
     <servlet>
     		<servlet-name>Welcome</servlet-name>
     		<servlet-class>servlet.WelcomeServlet</servlet-class>
