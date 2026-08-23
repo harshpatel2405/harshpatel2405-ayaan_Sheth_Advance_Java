@@ -117,4 +117,7 @@ HttpServlet  -> doget , doPost
 
 init() -> one time instantation
 
-
+<==========================================>
+1. Request Methods 
+	getParameter -> gets values from query    /login?username="harsh"
+		we will get value 'Harsh'

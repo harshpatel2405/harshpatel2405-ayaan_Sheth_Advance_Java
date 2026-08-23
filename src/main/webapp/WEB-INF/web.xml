@@ -31,5 +31,35 @@
     		<servlet-name>Login</servlet-name>
     		<url-pattern>/login</url-pattern>
     	</servlet-mapping>
+    	
+    	 <servlet>
+    		<servlet-name>Get</servlet-name>
+    		<servlet-class>servlet.GetMethod</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<servlet-name>Get</servlet-name>
+    		<url-pattern>/getmethod</url-pattern>
+    	</servlet-mapping>
+    	
+    	 <servlet>
+    		<servlet-name>Post</servlet-name>
+    		<servlet-class>servlet.PostMethod</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    		<servlet-name>Post</servlet-name>
+    		<url-pattern>/postmethod</url-pattern>
+    	</servlet-mapping>
+    	
+    <servlet>
+    		<servlet-name>NavDemo</servlet-name>
+    		<servlet-class>servlet.NavigationDemoPhase4</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>NavDemo</servlet-name>
+    	<url-pattern>/navDemo</url-pattern>
+    </servlet-mapping>
 
 </web-app>
