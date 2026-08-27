@@ -1,25 +1,27 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Document</title>
-	<style>
-		*
-		{
-		margin : 0;
-		padding:0;
-		}
-	</style>
+<meta charset="UTF-8">
+<title>Login Page</title>
 </head>
-
 <body>
-	<h1>phase 4 / login.html file</h1>
+	<center>
+		<h1> Login Page</h1>
+	</center>
 	
-	<form action="../../navDemo" method="get">
-		<input type='text' placeholder="Enter UserName" name="uname">   
-		<input type="hidden" value="12" name="rollNo">
-		<input type="submit" value="submit">
+	<form action='../../loginServlet' method='post'>
+		<label>Enter Username : </label>
+		<input type='text' placeholder="Enter Username" name='uname'>
+		<br>
+		<label>Enter Password : </label>
+		<input type='password' placeholder="Enter password" name='pwd'>
+		<br>  
+		
+		
+		<input type='submit'>
+		
 	</form>
 	
+	
 </body>
-
 </html>

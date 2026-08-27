@@ -17,6 +17,8 @@ Web Applications -- server
 Servlets 
 --------
 Servlet Container -> Servlet 
+
+
 Apache Tomcat
 
 
@@ -121,3 +123,21 @@ init() -> one time instantation
 1. Request Methods 
 	getParameter -> gets values from query    /login?username="harsh"
 		we will get value 'Harsh'
+		
+<==============================================>
+Navigation and Data validation 
+------------------------------
+Validate the data entered by the user
+
+Navigation 
+----------
+moving request from one page to another 
+
+Request Dispatcher 
+------------------
+Interface -- to go on which path 
+	1. forward 
+		Login Page --> LoginServlet -> Validate --> credentaials match (success.html) , else failure.html
+	2. include 
+	
+3. Redirect 

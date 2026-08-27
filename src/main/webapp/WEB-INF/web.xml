@@ -24,7 +24,7 @@
     	<!-- one Servlet  welcomeServlet.java-->
     <servlet>
     		<servlet-name>Login</servlet-name>
-    		<servlet-class>servlet.LoginServlet</servlet-class>
+    		<servlet-class>servlet.LoginDemoServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
