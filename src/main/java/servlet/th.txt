@@ -137,7 +137,14 @@ Request Dispatcher
 ------------------
 Interface -- to go on which path 
 	1. forward 
-		Login Page --> LoginServlet -> Validate --> credentaials match (success.html) , else failure.html
+		Login Page --> LoginServlet -> Validate -->(internally flow) credentaials match (success.html) , else failure.html
+		Transfer the request to a new page 
+		LoginServlet -> Success/failure
+		
 	2. include 
+		Add the request to the same page 
+		LoginServlet + success/failure
 	
 3. Redirect 
+	url gets updated 
+	sends a new request to the browser 
