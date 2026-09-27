@@ -57,8 +57,7 @@ public class JSSignupServlet extends HttpServlet {
 			}
 			else{
 				System.out.println("Data has not beed added in DB");
-				RequestDispatcher rd = req.getRequestDispatcher("HTML/JSSignup.html");
-				rd.forward(req,res);
+				res.sendRedirect("HTML/JSSignup.html");			
 			}
 
 			JdbcUtils.closeConnection(con);
