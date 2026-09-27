@@ -151,3 +151,14 @@ Interface -- to go on which path
 3. Redirect 
 	url gets updated 
 	sends a new request to the browser 
+<====================================================>
+Servlet -> Generic Servlet -> HTTP Servlet
+
+
+Servlet Config
+--------------
+one for each servlet 	
+store the configuration for that particular file 
+
+Servlet Context
+---------------

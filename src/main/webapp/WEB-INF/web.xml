@@ -61,5 +61,28 @@
     	<servlet-name>NavDemo</servlet-name>
     	<url-pattern>/navDemo</url-pattern>
     </servlet-mapping>
+    
+    
+    
+   <!--  <servlet>
+    	<servlet-name>servletConfig</servlet-name>
+    	<servlet-class>servlet.ServletConfigDemo</servlet-class>
+    	
 
+    	<init-param>
+	    	<param-name>username</param-name>
+	    	<param-value>demo</param-value>
+    	</init-param>
+    	
+    	<init-param>
+	    	<param-name>password</param-name>
+	    	<param-value>demo@123</param-value>
+    	</init-param>
+    </servlet>
+    
+    <servlet-mapping>
+    <servlet-name>servletConfig</servlet-name>
+    	<url-pattern>/servletConfig</url-pattern>
+    </servlet-mapping>
+ -->
 </web-app>
