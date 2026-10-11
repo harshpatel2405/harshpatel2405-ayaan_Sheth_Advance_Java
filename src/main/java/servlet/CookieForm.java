@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+// multiple cookies reading and set max age 
+
 @WebServlet("/cookieForm")
 public class CookieForm extends HttpServlet{
 	private static final long serialVersionUID = 1L;
@@ -17,6 +19,9 @@ public class CookieForm extends HttpServlet{
 	{
 		String username = req.getParameter("uname");
 		String age = req.getParameter("age");
+		int time = Integer.parseInt(req.getParameter("time"));
+		
+		
 		Cookie co = new Cookie("username", username);
 		Cookie co1 = new Cookie("age", age);
 		res.setContentType("text/html");
@@ -29,7 +34,11 @@ public class CookieForm extends HttpServlet{
 			System.out.println("Age : " + age);
 			System.out.println("Object of Cookie Class has been Created..");
 			
-		
+			// cookie should be avlbl for 10sec
+//			co.setMaxAge(10);
+			co.setMaxAge(time);
+			co1.setMaxAge(time);
+			
 			res.addCookie(co);
 			res.addCookie(co1);
 			
@@ -37,13 +46,24 @@ public class CookieForm extends HttpServlet{
 			
 		}else if(req.getParameter("action").equals("read"))
 		{
-				String CookieName1 = co.getName();
-				String CookieValue1 = co.getValue();
-				String CookieName2 = co1.getName();
-				String CookieValue2 = co1.getValue();
+			// single single read
+//				String CookieName1 = co.getName();
+//				String CookieValue1 = co.getValue();
+//				String CookieName2 = co1.getName();
+//				String CookieValue2 = co1.getValue();
+//				
+//				out.println("<b>" + CookieName1 + " : " + CookieValue1+"</b><br>");
+//				out.println("<b>" + CookieName2 + " : " + CookieValue2 + "</b>");
 				
-				out.println("<b>" + CookieName1 + " : " + CookieValue1+"</b><br>");
-				out.println("<b>" + CookieName2 + " : " + CookieValue2 + "</b>");
+				
+				Cookie [] cookie = req.getCookies();
+				if(cookie != null)
+				{
+					for(Cookie ck : cookie)
+					{
+						out.println("<b>" + ck.getName() + " : " + ck.getValue()+"</b><br>");
+					}
+				}
 								
 		}else if(req.getParameter("action").equals("delete"))
 		{
@@ -52,10 +72,5 @@ public class CookieForm extends HttpServlet{
 			out.println("<b>Username deleted successfully..</b>");
 //			co1.setMaxAge(0);
 		}
-	}
-
-	private PrintWriter getWriter() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
