@@ -22,7 +22,6 @@ public class ServletContextDemo extends HttpServlet {
 			
 			System.out.println("Username : " +name);
 			System.out.println("Password : " + password);
-			
  	}
 	
 }

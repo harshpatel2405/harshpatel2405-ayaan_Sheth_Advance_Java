@@ -64,7 +64,7 @@
     
     
     
-   <!--  <servlet>
+    <servlet>
     	<servlet-name>servletConfig</servlet-name>
     	<servlet-class>servlet.ServletConfigDemo</servlet-class>
     	
@@ -84,5 +84,5 @@
     <servlet-name>servletConfig</servlet-name>
     	<url-pattern>/servletConfig</url-pattern>
     </servlet-mapping>
- -->
+
 </web-app>

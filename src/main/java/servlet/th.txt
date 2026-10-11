@@ -162,3 +162,28 @@ store the configuration for that particular file
 
 Servlet Context
 ---------------
+
+<================================================================>
+Session Management 
+------------------
+HTTP Requests are stateless -- it does not hold any information of the user who is logged in 
+
+
+Login -- 101 (id)
+	if login success
+		/user/dashboard   -- does it know , it has to provide information of user with id 101
+		/user/profile 
+		/user/*
+	else 
+		Login.html
+		
+		
+	a. Cookies 
+	--> Cookies are a place in browser , which can hold/store information ...
+	--> Cookies are automatically send with each request 
+	
+	--> problem : Since cookies are in brwoser and directly accessible by user ...it can be modified...
+	
+	b. HTTP Session 
+	c. URL Rewriting
+	d. Hidden Fields

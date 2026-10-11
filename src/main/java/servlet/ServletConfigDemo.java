@@ -7,13 +7,14 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.annotation.WebServlet; //  using servlets without web.xml file 
 import jakarta.servlet.http.*;
 
-@WebServlet(
-	urlPatterns = ("/servletConfig"),
-	initParams = {
-		@WebInitParam( name= "username",value="demo"),
-		@WebInitParam(name = "password", value = "demo@123")
-	}
-)
+//// modern appraoch 
+//@WebServlet(
+//	urlPatterns = ("/servletConfig"),
+//	initParams = {
+//		@WebInitParam( name= "username",value="demo"),
+//		@WebInitParam(name = "password", value = "demo@123")
+//	}
+//)
 
 public class ServletConfigDemo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
